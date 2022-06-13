@@ -1,0 +1,60 @@
+.card-container {
+  background-image: url("../images/services.jpg");
+  height: 100vh;
+  background-size: cover;
+  padding: 20px;
+}
+
+.card-box {
+  display: inline-block;
+  line-height: 90px;
+  text-align: center;
+  width: 100%;
+
+  .btn {
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    background-color: #0d6efd;
+    color: white;
+  }
+
+  .btn:hover {
+    background-color: lightslategray;
+    color: white;
+  }
+
+  .btn-secondary {
+    background-color: white;
+    margin-left: 15px;
+    color: #0d6efd;
+  }
+}
+
+.icon {
+  margin: 0 auto;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  transition: none;
+  //background: rgba(243, 244, 245, 0.17);
+  margin: 35px 60px;
+  position: absolute;
+  max-height: 20em;
+  //padding: 0 3em;
+
+  .section {
+    text-align: center;
+    //padding: 2em 1em;
+    padding: 30px;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(243, 244, 245, 0.17);
+    margin:30px;
+    background: rgba(243, 244, 245, 0.17);
+  }
+
+}
