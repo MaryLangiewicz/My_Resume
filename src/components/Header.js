@@ -1,44 +1,43 @@
-import Navbar from 'react-bootstrap/Navbar';
-import {Container} from "react-bootstrap";
-import Nav from 'react-bootstrap/Nav';
+import {Link} from 'react-router-dom';
 import logo from "../images/logo.png";
 
- function Header (){
+function Header() {
     return (
         <>
-        <header>
-                <Navbar bg="dark" variant="dark">
-                    <Container>
-                        <Navbar.Brand href="#home">
-                            <img
-                                alt=""
-                                src={logo}
-                                width="30"
-                                height="30"
-                                className="d-inline-block align-top"
-                            />{' '}
-                            Maryia Langiewicz
-                        </Navbar.Brand>
-                    </Container>
-                    <Nav className="justify-content-end" activeKey="/home">
-                        <Nav.Item>
-                            <Nav.Link to="/home">HOME</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link eventKey="link-1"> ABOUT</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link eventKey="link-2">SERVICES</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link eventKey="link-1"> PROJECTS</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link eventKey="link-2">CONTACT</Nav.Link>
-                        </Nav.Item>
-                    </Nav>
-                </Navbar>
-        </header>
+            <header>
+                <div className="page-header">
+                    <div className="header-logo">
+                        <img
+                            alt=""
+                            src={logo}
+                            width="40"
+                            height="40"
+                            className="d-inline-block "
+                        />{' '}
+                        <span className="page-header-logo__name">MARIA</span>
+                        <span className="page-header-logo__surname">LANGIEWICZ</span>
+                    </div>
+                    <div className="page-menu">
+                        <ul className="page-menu__list">
+                            <li className="page-menu__item">
+                                <Link to="/">Home</Link>
+                            </li>
+                            <li className="page-menu__item">
+                                <Link to="/about"> About</Link>
+                            </li>
+                            <li className="page-menu__item">
+                                <Link to="/services">Services</Link>
+                            </li>
+                            <li className="page-menu__item">
+                                <Link to="/projects"> Projects</Link>
+                            </li>
+                            <li className="page-menu__item">
+                                <Link to="/contact">Contact</Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
         </>
     )
 }

@@ -1,5 +1,8 @@
 import './App.css';
 import Main from './Main';
+import AboutMeMain from './AboutMeMain.js';
+import MyServicesMain from "./MyServicesMain";
+import MyProjectsMain from "./MyProjectsMain";
 import './sass/main.scss';
 import {
   HashRouter,
@@ -10,6 +13,8 @@ import {
   Switch,
   NavLink,
 } from 'react-router-dom';
+import MyServices from "./components/MyServices";
+
 
 
 function App() {
@@ -17,11 +22,11 @@ function App() {
       <HashRouter>
         <Routes>
           <Route index element={<Main />} />
-          {/*<Route path="/contact" element={<ContactMain/>}/>*/}
-          {/*<Route path="/about" element={<AboutUsMain/>}/>*/}
+          <Route path="/about" element={<AboutMeMain/>}/>
+            <Route path="/services" element={<MyServicesMain/>}/>
+            <Route path="/projects" element={<MyProjectsMain/>}/>
         </Routes>
       </HashRouter>
-
   )
 }
 export default App;

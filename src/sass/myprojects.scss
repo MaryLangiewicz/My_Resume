@@ -1,0 +1,31 @@
+.gallery-img{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+.gallery-item{
+    padding: 15px;
+    margin: 15px;
+    background: #edf3f3;
+}
+  }
+.gallery {
+    width: 100%;
+    padding: 48px 15px;
+    margin-right: auto;
+    margin-left: auto;
+    .gallery-title {
+        color: #282c34;
+        padding-top: 20px;
+        font-size: 2.5rem;
+        text-align: center;
+        letter-spacing: 1px;
+        font-family: 'Tiro Tamil', serif;
+    }
+}
+
+
+
