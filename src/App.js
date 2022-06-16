@@ -3,6 +3,7 @@ import Main from './Main';
 import AboutMeMain from './AboutMeMain.js';
 import MyServicesMain from "./MyServicesMain";
 import MyProjectsMain from "./MyProjectsMain";
+import ContactFormMain from "./ContactFormMain";
 import './sass/main.scss';
 import {
   HashRouter,
@@ -13,7 +14,7 @@ import {
   Switch,
   NavLink,
 } from 'react-router-dom';
-import MyServices from "./components/MyServices";
+
 
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/about" element={<AboutMeMain/>}/>
             <Route path="/services" element={<MyServicesMain/>}/>
             <Route path="/projects" element={<MyProjectsMain/>}/>
+          <Route path="/contact" element={<ContactFormMain/>}/>
         </Routes>
       </HashRouter>
   )

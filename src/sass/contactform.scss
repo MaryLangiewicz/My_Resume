@@ -1,0 +1,109 @@
+.contact-container {
+  background-color: #2f2f2f;
+  height: 90vh;
+  background-size: cover;
+  padding: 20px;
+
+  .title-contact1 {
+    color: #cacaca;
+    font-size: 2.625em;
+    line-height: 1.45em;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 0.1em;
+    text-transform: none;
+    width: 100%;
+    text-shadow: 2px 2px 0 rgb(0 0 0 / 15%);
+  }
+
+  .text-contact1 {
+    font-size: 1.15em;
+    line-height: 1.7em;
+    color: #8a8a8a;
+  }
+
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.tittle-description {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  letter-spacing: 1px;
+  width: 80%;
+  height: 100%;
+  padding: 6px 14px 5px 33px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #797979;
+  //border-width: 0 0 1px 0;
+  //border-style: solid;
+  //border-color: #797979;
+  //background-color: #2f2f2f;
+  line-height: 100%;
+}
+
+
+.button__form {
+  background: rgb(158, 158, 158);
+  color: rgb(196, 196, 196);
+  border-radius: 3px;
+
+}
+
+.firstName,
+.lastName,
+.email {
+  margin: 10px 30px;
+  background-color: #2f2f2f;
+  color: #797979;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #797979;
+
+}
+
+.title-contact2 {
+  font-size: 1.4em;
+  line-height: 1.7em;
+  color: #8a8a8a;
+  font-weight: 700;
+  margin: 70px 0 16px;
+}
+
+.text-contact2{
+  font-size: 1.15em;
+  line-height: 1.7em;
+  color: #8a8a8a;
+  margin: 0 0 16px;
+}
+
+.social-media{
+  margin:0 15px auto;
+  border-width: 0 0 1px 0;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+}
+.facebook__icon{
+  background: rgb(72, 104, 173);
+}
+
+.github__icon{
+  background: rgb(79, 79, 79);
+}
+
+.linkedIn__icon{
+  background: rgb(0, 119, 181);
+}
+
+.twitter__icon{
+  background: rgb(0, 172, 237);
+}
