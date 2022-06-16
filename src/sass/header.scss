@@ -5,12 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //background-color: #FFF5EE;
     font-family: 'Crimson Text', serif;
 
     .page-header-logo__name {
         font-weight: 600;
-        //color: white;
         color: #6f8686;
         text-shadow: 0 0 1px rgb(111 134 134 / 30%);
         vertical-align: middle;
@@ -47,7 +45,7 @@
         text-decoration: none;
     }
     a:hover{
-        color:white;
+        color:lightskyblue;
     }
 }
 

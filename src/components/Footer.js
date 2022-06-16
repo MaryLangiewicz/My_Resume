@@ -1,34 +1,43 @@
-import Navbar from 'react-bootstrap/Navbar';
-import {Container} from "react-bootstrap";
-import Nav from 'react-bootstrap/Nav';
+import {Link} from 'react-router-dom';
 import logo from "../images/logo.png";
-function Footer (){
+
+function Footer() {
     return (
         <>
-            <footer className="footer">
-               <div >
-                   <div>
-                       <Nav className="justify-content align-content-end" activeKey="/home">
-                           <Nav.Item>
-                               <Nav.Link to="/home">HOME</Nav.Link>
-                           </Nav.Item>
-                           <Nav.Item>
-                               <Nav.Link eventKey="link-1"> ABOUT</Nav.Link>
-                           </Nav.Item>
-                           <Nav.Item>
-                               <Nav.Link eventKey="link-2">SERVICES</Nav.Link>
-                           </Nav.Item>
-                           <Nav.Item>
-                               <Nav.Link eventKey="link-1"> PROJECTS</Nav.Link>
-                           </Nav.Item>
-                           <Nav.Item>
-                               <Nav.Link eventKey="link-2">CONTACT</Nav.Link>
-                           </Nav.Item>
-                       </Nav>
-                   </div>
-
-               </div>
-            </footer>
+            <header>
+                <div className="page-footer">
+                    <div className="footer-logo">
+                        <img
+                            alt=""
+                            src={logo}
+                            width="20"
+                            height="20"
+                            className="d-inline-block "
+                        />{' '}
+                        <span className="page-footer-logo__name">Maria</span>
+                        <span className="page-footer-logo__surname">Langiewicz</span>
+                    </div>
+                    <div className="page-footer">
+                        <ul className="page-footer footer__list">
+                            <li className="footer__item">
+                                <Link to="/">Home</Link>
+                            </li>
+                            <li className="footer__item">
+                                <Link to="/about"> About</Link>
+                            </li>
+                            <li className="footer__item">
+                                <Link to="/services">Services</Link>
+                            </li>
+                            <li className="footer__item">
+                                <Link to="/projects"> Projects</Link>
+                            </li>
+                            <li className="footer__item">
+                                <Link to="/contact">Contact</Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
         </>
     )
 }

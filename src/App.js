@@ -14,6 +14,7 @@ import {
   Switch,
   NavLink,
 } from 'react-router-dom';
+import Footer from "./components/Footer";
 
 
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/services" element={<MyServicesMain/>}/>
             <Route path="/projects" element={<MyProjectsMain/>}/>
           <Route path="/contact" element={<ContactFormMain/>}/>
+          <Route index element={<Footer />} />
         </Routes>
       </HashRouter>
   )

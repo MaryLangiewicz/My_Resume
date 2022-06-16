@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-family: 'Crimson Text', serif;
+
+
+  .page-footer-logo__name {
+    font-weight: 600;
+    color: #6f8686;
+    text-shadow: 0 0 1px rgb(111 134 134 / 30%);
+    vertical-align: middle;
+    padding-right: 7px;
+
+  }
+
+  .page-footer-logo__surname {
+    font-weight: 600;
+    color: #6f8686;
+    vertical-align: middle;
+
+  }
+}
+
+
+.footer__list {
+  align-items: center;
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  padding-right: 40px;
+  float: right;
+  margin:0;
+
+
+
+}
+
+.footer__item {
+  padding: 10px;
+  a{
+    color: #6f8686;
+    text-decoration: none;
+  }
+  a:hover{
+    color:lightskyblue;
+  }
+}
+
+.footer__item:hover {
+  background-color: #FFFFFF33;
+  cursor: pointer;
+}

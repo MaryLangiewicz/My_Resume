@@ -1,8 +1,7 @@
 import React from "react";
 import Header from './components/Header.js';
 import ContactForm from './components/ContactForm';
-
-// import Footer from './components/Footer.js';
+import Footer from './components/Footer.js';
 
 
 function Contact() {
@@ -10,7 +9,7 @@ function Contact() {
         <>
             <Header/>
             <ContactForm/>
-            {/*<Footer />*/}
+            <Footer />
         </>
     )
 }
