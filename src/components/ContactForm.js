@@ -49,7 +49,7 @@ const ContactForm = () => (
                                    type="email"
                             />
                         </div>
-                        <button className="tittle-description button__form" type="submit">Submit you message</button>
+                        <button className="tittle-description button__form" type="submit" disabled={isSubmitting}>Submit you message</button>
                     </Form>
                 )}
             </Formik>
@@ -152,7 +152,6 @@ const ContactForm = () => (
                 </button>
             </div>
         </div>
-    )
-;
+    );
 
 export default ContactForm;
