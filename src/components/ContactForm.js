@@ -59,7 +59,7 @@ const ContactForm = () => (
                 Linkedin.</p>
 
             <div className="social-media">
-                <button className="social-media facebook__icon" type="submit">
+                <button className="facebook__icon" type="submit">
                     <svg className="i-svg" height="50" version="1.1" width="50"
                          xmlns="http://www.w3.org/2000/svg"
                          preserveAspectRatio="xMidYMid meet"
@@ -76,7 +76,7 @@ const ContactForm = () => (
                     Facebook
                 </button>
 
-                <button className="social-media github__icon" type="submit">
+                <button className="github__icon" type="submit">
                     <svg className="i-svg"
                          height="50"
                          version="1.1" width="50"
@@ -103,7 +103,7 @@ const ContactForm = () => (
                     GitHub
                 </button>
 
-                <button className="social-media linkedIn__icon" type="submit">
+                <button className="linkedIn__icon" type="submit">
                     <svg className="i-svg"
                          height="50"
                          version="1.1"
@@ -125,7 +125,7 @@ const ContactForm = () => (
                     </svg>
                     LinkedIn
                 </button>
-                <button className="social-media twitter__icon" type="submit">
+                <button className="twitter__icon" type="submit">
                     <svg className="i-svg"
                          height="50"
                          version="1.1"
